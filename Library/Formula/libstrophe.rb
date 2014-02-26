@@ -20,7 +20,7 @@ class Libstrophe < Formula
       --mandir=#{man}
     ]
     if build.with? "libxml2"
-      args.push(--with-libxml2)
+      args.push("--with-libxml2")
     end
 
     man.mkpath
